@@ -315,8 +315,8 @@ function parkCar3(){
 function startCar2(){
 
 	
-	// gsap.set('.carHolder',{ css:{opacity:1} });
-	// gsap.set('#carsvg',{ transformOrigin: "0% 0%", rotation:70, scale:0.08, x:419, y:211 });
+	gsap.set('.carHolder',{ css:{opacity:1} });
+	gsap.set('#carsvg',{ transformOrigin: "0% 0%", rotation:70, scale:0.08, x:419, y:211 });
 
 	let tl = new TimelineMax({ease:Linear.none, onComplete:continueCar2, delay:10 });
 	tl.to('#carsvg', 0.4, { rotation:70, y:'+=5', x:'-=0'},'-=0.2')
@@ -328,7 +328,7 @@ function startCar2(){
 	tl.to('#carsvg', 0.4, { rotation:130, y:'+=5', x:'-=0'},'-=0.2')
 	tl.to('#carsvg', 0.4, { rotation:140, y:'+=5', x:'-=0'},'-=0.2')
 	tl.to('#carsvg', 0.4, { rotation:150, y:'+=5', x:'-=0'},'-=0.2')
-	tl.to('#carsvg', 0.4, { rotation:165, y:'+=8', x:'+=0.5'},'-=0.2')
+	tl.to('#carsvg', 0.4, { rotation:165, y:'+=9', x:'+=0.5'},'-=0.2')
 
 }
 
@@ -419,8 +419,8 @@ function checkCar2(){
 				tl.to('#carsvg', 0.4, { rotation:160, y:'+=2', x:'+=10'},'-=0.2')
 				tl.to('#carsvg', 0.4, { rotation:180, y:'+=2', x:'+=10'},'-=0.2')
 				tl.to('#carsvg', 0.4, { rotation:200, y:'+=2', x:'+=10'},'-=0.2')
-				tl.to('#carsvg', 0.4, { rotation:220, y:'+=2', x:'+=10'},'-=0.2')
-				// tl.timeScale(0.5); // speed animation up
+				tl.to('#carsvg', 0.4, { rotation:220, y:'-=1', x:'+=10'},'-=0.2')
+				tl.timeScale(0.5); // speed animation down
 
 			break
 
@@ -431,7 +431,6 @@ function checkCar2(){
 }
 
 /* car path 1 ----------------------------------------------------   */
-
 function moveCar(){
 	
 	// register
