@@ -420,7 +420,7 @@ function checkCar2(){
 				tl.to('#carsvg', 0.4, { rotation:180, y:'+=2', x:'+=10'},'-=0.2')
 				tl.to('#carsvg', 0.4, { rotation:200, y:'+=2', x:'+=10'},'-=0.2')
 				tl.to('#carsvg', 0.4, { rotation:220, y:'+=2', x:'+=10'},'-=0.2')
-				tl.timeScale(0.5); // speed animation up
+				// tl.timeScale(0.5); // speed animation up
 
 			break
 

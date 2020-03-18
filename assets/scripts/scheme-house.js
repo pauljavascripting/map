@@ -46,30 +46,35 @@ function enableNavButtons(){
             svg.addEventListener('click', function() {
               loadData(0);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton2a');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(1);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton3a');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(2);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton4a');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(3);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton5a');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(4);
             });
+            svg.style.cursor = 'pointer';
 
         }
 }
@@ -490,20 +495,21 @@ switch(house_type){
 
 	break;
 
-	case 1:
-		colours = ['#728393', '#728393'];
+	case 1: // not yet
+		colours = ['#4e5a65','#728393'];
 
 	break;
-	case 2:
-		colours = ['#d9a831', '#d9a831'];
+	case 2: // for sale
+		colours = ['#9a7922', '#d9a831'];
 
 	break;
-	case 3:
-		colours = ['#ef784a', '#ef784a'];
+	case 3: // reserved
+		// colours = ['#ef784a', '#a7614a'];
+		colours = ['#a7614a', 'ef784a'];
 
 	break;
-	case 4:
-		colours = ['#d21e3d', '#d21e3d'];
+	case 4: // sold 
+		colours = ['#941929', '#d21e3d'];
 
 	break;
 }
@@ -905,19 +911,23 @@ if(svgElement){
 			roofColour = colourArray[1];
 		}
 
+		// console.log('wc'+wallColour)
+		// console.log('rc'+roofColour)
+
+
 		for(let j=0;j<element.children.length;j++){
 		
 			// colour roof
-			// let roof = _.includes(element.children[j].id,'_roof')
-			let roof = _.filter(element.children[j].id,'_roof')
+			let roof = _.includes(element.children[j].id,'roof')
+			// let roof = _.filter(element.children[j].id,'_roof')
 			if(roof){
 				//console.log('roofColour-----------------------------'+roofColour)
 				element.children[j].style.fill = roofColour;
 			}
 
 			// colour wall
-			// let wall = _.includes(element.children[j].id,'_wall')
-			let wall = _.filter(element.children[j].id,'_wall')
+			let wall = _.includes(element.children[j].id,'wall')
+			// let wall = _.filter(element.children[j].id,'wall')
 			if(wall){
 				// console.log(' wallColour--------------------'+ wallColour)
 				element.children[j].style.fill = wallColour;
