@@ -7,30 +7,35 @@ function enableNavButtons(){
             svg.addEventListener('click', function() {
               loadData(0);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton2');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(1);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton3');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(2);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton4');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(3);
             });
+            svg.style.cursor = 'pointer';
 
             var object = document.getElementById('menuButton5');
             var svg = object.contentDocument.rootElement;
             svg.addEventListener('click', function() {
               loadData(4);
             });
+            svg.style.cursor = 'pointer';
         }
 
         // make mobile buttons clickable
