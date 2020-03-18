@@ -366,7 +366,7 @@ function checkCar2(){
 		const split1 = posArray[0].split('translate3d(');
 		const split2 = split1[1].split('px');
 		let posX = split2[0];
-
+		// console.log(posX)
 		switch(true){
 
 			case posX > 546 && posX <= 550:
@@ -407,8 +407,8 @@ function checkCar2(){
 			break
 
 
-			case posX > 875 && posX < 877:
-				
+			case posX > 872 && posX < 877:
+				// console.log('*****')
 				gsap.killTweensOf('#carsvg');
 
 				// gsap.set('.carHolder',{ css:{opacity:1}});

@@ -15440,7 +15440,7 @@ h5 {
 
 .carpathsvg {
   position: absolute;
-  /*visibility: hidden;*/
+  visibility: hidden;
   /*z-index: 100;
   width: 1110px;
   height:770px;
