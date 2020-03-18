@@ -90,394 +90,419 @@ let colours;
 var res = id.split("_");
 let house_id = Number(res[1]);
 
-switch(true){
+switch(house_type){
 
-	case house_id == 1: // plot number 1
+	case 0:
 
-		colours = ['#9a7922', '#d9a831'];
+	switch(true){
 
-	break;
+			case house_id == 1: // plot number 1
 
-	case house_id == 2:
+				colours = ['#9a7922', '#d9a831'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id == 2:
 
-	case house_id >=3 && house_id < 6:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=3 && house_id < 6:
 
-	case house_id >=6 && house_id < 7:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=6 && house_id < 7:
 
-	case house_id == 7:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id == 7:
 
-	case house_id >=7 && house_id < 10:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=7 && house_id < 10:
 
-	case house_id >=10 && house_id < 13:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id >=10 && house_id < 13:
 
-	case house_id >=13 && house_id < 15:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=13 && house_id < 15:
 
-	case house_id == 15:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id == 15:
 
-	case house_id >=16 && house_id < 18:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#dcb18e', '#bf8c6f'];
+			break;
 
-	break;
+			case house_id >=16 && house_id < 18:
 
-	case house_id >=18 && house_id < 20:
+				colours = ['#dcb18e', '#bf8c6f'];
 
-		colours = ['#f784a', '#a7614'];
+			break;
 
-	break;
+			case house_id >=18 && house_id < 20:
 
-	case house_id >=20 && house_id < 22:
+				colours = ['#f784a', '#a7614'];
 
-		colours = ['#4282a1', '#2c566a'];
+			break;
 
-	break;
+			case house_id >=20 && house_id < 22:
 
-	case house_id >=22 && house_id < 28:
+				colours = ['#4282a1', '#2c566a'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=22 && house_id < 28:
 
-	case house_id >=28 && house_id < 32:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=28 && house_id < 32:
 
-	case house_id >=32 && house_id < 35:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#dcb18e', '#bf8c6f'];
+			break;
 
-	break;
+			case house_id >=32 && house_id < 35:
 
-	case house_id == 35:
+				colours = ['#dcb18e', '#bf8c6f'];
 
-		colours = ['#7d9874', '#677f60'];
+			break;
 
-	break;
+			case house_id == 35:
 
-	case house_id >=35 && house_id < 39:
+				colours = ['#7d9874', '#677f60'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=35 && house_id < 39:
 
-	case house_id >=39 && house_id < 41:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=39 && house_id < 41:
 
-	case house_id == 41:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#c2b4cd', '#887f90'];
+			break;
 
-	break;
+			case house_id == 41:
 
-	case house_id >=41 && house_id < 46:
+				colours = ['#c2b4cd', '#887f90'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=41 && house_id < 46:
 
-	case house_id == 46:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#c2b4cd', '#887f90'];
+			break;
 
-	break;
+			case house_id == 46:
 
-	case house_id >=47 && house_id < 50:
+				colours = ['#c2b4cd', '#887f90'];
 
-		colours = ['#4282a1', '#2c566a'];
+			break;
 
-	break;
+			case house_id >=47 && house_id < 50:
 
-	case house_id >=50 && house_id < 53:
+				colours = ['#4282a1', '#2c566a'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=50 && house_id < 53:
 
-	case house_id == 53:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#7d9874', '#677f60'];
+			break;
 
-	break;
+			case house_id == 53:
 
-	case house_id >=54 && house_id < 58:
+				colours = ['#7d9874', '#677f60'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=54 && house_id < 58:
 
-	case house_id == 58:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id == 58:
 
-	case house_id >=59 && house_id < 64:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#d21e3d', '#941929'];
+			break;
 
-	break;
+			case house_id >=59 && house_id < 64:
 
-	case house_id == 64:
+				colours = ['#d21e3d', '#941929'];
 
-		colours = ['#c2b4cd', ' #887f90'];
+			break;
 
-	break;
+			case house_id == 64:
 
-	case house_id >=65 && house_id < 66:
+				colours = ['#c2b4cd', ' #887f90'];
 
-		colours = ['#b2d3e3', '#7c949f'];
+			break;
 
-	break;
+			case house_id >=65 && house_id < 66:
 
-	case house_id >=66 && house_id < 69:
+				colours = ['#b2d3e3', '#7c949f'];
 
-		colours = ['#b2d3e3', '#7c949f'];
+			break;
 
-	break;
+			case house_id >=66 && house_id < 69:
 
-	case house_id >=69 && house_id < 72:
+				colours = ['#b2d3e3', '#7c949f'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=69 && house_id < 72:
 
-	case house_id == 72:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id == 72:
 
-	case house_id == 73:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id == 73:
 
-	case house_id == 74:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id == 74:
 
-	case house_id >=75 && house_id < 77:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=75 && house_id < 77:
 
-	case house_id >=77 && house_id < 79:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#dcb18e', '#bf8c6f'];
+			break;
 
-	break;
+			case house_id >=77 && house_id < 79:
 
-	case house_id == 79:
+				colours = ['#dcb18e', '#bf8c6f'];
 
-		colours = ['#7d9874', '#677f60'];
+			break;
 
-	break;
+			case house_id == 79:
 
-	case house_id >=80 && house_id < 82:
+				colours = ['#7d9874', '#677f60'];
 
-		colours = ['#dcb18e', '#bf8c6f'];
+			break;
 
-	break;
+			case house_id >=80 && house_id < 82:
 
-	case house_id >=82 && house_id < 85:
+				colours = ['#dcb18e', '#bf8c6f'];
 
-		colours = ['#4282a1', '#2c566a'];
+			break;
 
-	break;
+			case house_id >=82 && house_id < 85:
 
-	case house_id >=85 && house_id < 88:
+				colours = ['#4282a1', '#2c566a'];
 
-		colours = ['#c2b4cd', '#887f90'];
+			break;
 
-	break;
+			case house_id >=85 && house_id < 88:
 
-	case house_id >=88 && house_id < 91:
+				colours = ['#c2b4cd', '#887f90'];
 
-		colours = ['#b2d3e3', '#7c949f'];
+			break;
 
-	break;
+			case house_id >=88 && house_id < 91:
 
-	case house_id == 91:
+				colours = ['#b2d3e3', '#7c949f'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id == 91:
 
-	case house_id >=91 && house_id < 94:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=91 && house_id < 94:
 
-	case house_id >=94 && house_id < 96:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=94 && house_id < 96:
 
-	case house_id == 96:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id == 96:
 
-	case house_id >=96 && house_id < 101:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=96 && house_id < 101:
 
-	case house_id == 101:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id == 101:
 
-	case house_id >=101 && house_id < 105:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#b2d3e3', '#7c949f'];
+			break;
 
-	break;
+			case house_id >=101 && house_id < 105:
 
-	case house_id >=105 && house_id < 107:
+				colours = ['#b2d3e3', '#7c949f'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id >=105 && house_id < 107:
 
-	case house_id >=107 && house_id < 112:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#014a53', '#003036'];
+			break;
 
-	break;
+			case house_id >=107 && house_id < 112:
 
-	case house_id >=112 && house_id < 114:
+				colours = ['#014a53', '#003036'];
 
-		colours = ['#c2b4cd', '#887f90'];
+			break;
 
-	break;
+			case house_id >=112 && house_id < 114:
 
-	case house_id >=114 && house_id < 116:
+				colours = ['#c2b4cd', '#887f90'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id >=114 && house_id < 116:
 
-	case house_id >=116 && house_id < 118:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#c2b4cd', '#887f90'];
+			break;
 
-	break;
+			case house_id >=116 && house_id < 118:
 
-	case house_id >=118 && house_id < 120:
+				colours = ['#c2b4cd', '#887f90'];
 
-		colours = ['#4282a1', '#2c566a'];
+			break;
 
-	break;
+			case house_id >=118 && house_id < 120:
 
-	case house_id >=120 && house_id < 123:
+				colours = ['#4282a1', '#2c566a'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=120 && house_id < 123:
 
-	case house_id >=123 && house_id < 124:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=123 && house_id < 124:
 
-	case house_id >=124 && house_id < 128:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#b2d3e3', '#7c949f'];
+			break;
 
-	break;
+			case house_id >=124 && house_id < 128:
 
-	case house_id >=128 && house_id < 133:
+				colours = ['#b2d3e3', '#7c949f'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=128 && house_id < 133:
 
-	case house_id >=133 && house_id < 140:
+				colours = ['#ef784a', '#a7614a'];
 
-		colours = ['#dcb18e', '#bf8c6f'];
+			break;
 
-	break;
+			case house_id >=133 && house_id < 140:
 
-	case house_id >=140 && house_id < 142:
+				colours = ['#dcb18e', '#bf8c6f'];
 
-		colours = ['#d9a831', '#9a7922'];
+			break;
 
-	break;
+			case house_id >=140 && house_id < 142:
 
-	case house_id == 142:
+				colours = ['#d9a831', '#9a7922'];
 
-		colours = ['#728393', '#4e5a65'];
+			break;
 
-	break;
+			case house_id == 142:
 
-	case house_id >=142 && house_id < 147:
+				colours = ['#728393', '#4e5a65'];
 
-		colours = ['#ef784a', '#a7614a'];
+			break;
 
-	break;
+			case house_id >=142 && house_id < 147:
+
+				colours = ['#ef784a', '#a7614a'];
 
-	case house_id >=147 && house_id < 149:
+			break;
 
-		colours = ['#4282a1', '#2c566a'];
+			case house_id >=147 && house_id < 149:
 
+				colours = ['#4282a1', '#2c566a'];
+
+			break;
+
+			case house_id >=149 && house_id < 151:
+
+				colours = ['#ef784a', '#a7614a'];
+
+			break;
+
+
+		}
+
 	break;
 
-	case house_id >=149 && house_id < 151:
+	case 1:
+		colours = ['#728393', '#728393'];
 
-		colours = ['#ef784a', '#a7614a'];
+	break;
+	case 2:
+		colours = ['#d9a831', '#d9a831'];
 
 	break;
+	case 3:
+		colours = ['#ef784a', '#ef784a'];
 
+	break;
+	case 4:
+		colours = ['#d21e3d', '#d21e3d'];
 
+	break;
 }
+		
 
 return colours
 
@@ -854,7 +879,7 @@ for(let i=1;i<numHouses;i++){
 
 function colourHouses(house_type){
 
-
+console.log('colourHouses'+house_type)
 let svgElement = document.getElementsByClassName("houses")[0];
 
 if(svgElement){
@@ -869,37 +894,28 @@ if(svgElement){
 		let wallColour;
 		let roofColour;
 
-		// if plot number & house type filter
-		if(house_type==0){
-
-			let colourArray = getHouseColours(house_type, element.id);
-
-			if(colourArray){
-				wallColour = colourArray[0];
-				roofColour = colourArray[1];
-			}
+		let colourArray = getHouseColours(house_type, element.id);
+		if(colourArray){
+			wallColour = colourArray[0];
+			roofColour = colourArray[1];
 		}
-		else{
 
-			wallColour = '#c2b4cd';
-			roofColour = '#887f90';
-
-		}
+		//console.log('wallColour'+wallColour)
 
 
 		for(let j=0;j<element.children.length;j++){
-
+			//console.log(element.children[j].id)
 			// colour roof
-			let roof = _.includes(element.children[j].id,'roof')
+			let roof = _.includes(element.children[j].id,'_roof')
 			if(roof){
-
+				//console.log('roofColour-----------------------------'+roofColour)
 				element.children[j].style.fill = roofColour;
 			}
 
 			// colour wall
-			let wall = _.includes(element.children[j].id,'wall')
+			let wall = _.includes(element.children[j].id,'_wall')
 			if(wall){
-
+				// console.log(' wallColour--------------------'+ wallColour)
 				element.children[j].style.fill = wallColour;
 			}
 
