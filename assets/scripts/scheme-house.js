@@ -918,16 +918,17 @@ if(svgElement){
 		for(let j=0;j<element.children.length;j++){
 		
 			// colour roof
-			let roof = _.includes(element.children[j].id,'roof')
-			// let roof = _.filter(element.children[j].id,'_roof')
+			// let roof = _.includes(element.children[j].id,'roof')
+
+			let roof = element.children[j].id.includes('_roof')
 			if(roof){
-				//console.log('roofColour-----------------------------'+roofColour)
+				// console.log('roofColour-----------------------------'+roofColour)
 				element.children[j].style.fill = roofColour;
 			}
 
 			// colour wall
-			let wall = _.includes(element.children[j].id,'wall')
-			// let wall = _.filter(element.children[j].id,'wall')
+			// let wall = _.includes(element.children[j].id,'wall')
+			let wall = element.children[j].id.includes('wall')
 			if(wall){
 				// console.log(' wallColour--------------------'+ wallColour)
 				element.children[j].style.fill = wallColour;
