@@ -1,0 +1,244 @@
+.buyingyourhome-advantages {
+    @include nav-height();
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+
+    .strapline {
+        @include make-col-ready();
+        padding-bottom: $spacing * 0.5;
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+
+        br {
+            @include media-breakpoint-down(xs) {
+                display: none;
+            }
+        }
+    }
+
+    .advantage {
+        @include make-col-ready();
+        margin-bottom: $spacing;
+
+        @include media-breakpoint-up(md) {
+            @include make-col(6);
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .image {
+            @include make-col-ready();
+            @include make-col(3);
+
+            @include media-breakpoint-up(sm) {
+                @include make-col(2);
+            }
+
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+        }
+
+        .text {
+            @include make-col-ready();
+            @include make-col(9);
+
+            @include media-breakpoint-up(sm) {
+                padding-left: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            background-color: $color-dumble;
+            border-radius: 50%;
+            padding: 0.5rem;
+            width: 4rem;
+            height: 4rem;
+
+            @include media-breakpoint-up(lg) {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+}
+
+.buyingyourhome-stages {
+    background-color: $color-primary-mill-tail;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+
+    .strapline {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+            padding-bottom: $spacing * 0.5;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .stage {
+        @include make-col-ready();
+        margin-bottom: $spacing * 0.5;
+
+        @include media-breakpoint-up(md) {
+            @include make-col(6);
+        }
+
+        .image {
+            @include make-col-ready();
+
+            padding: $spacing * 0.5;
+            margin-bottom: $spacing * 0.5;
+
+            img {
+                border-radius: 50%;
+                padding: 0.5rem;
+                width: 10rem;
+                height: 10rem;
+
+                @include center;
+
+            }
+        }
+
+        .text {
+            @include make-col-ready();
+
+            h5 {
+                margin-bottom: $spacing * 0.5;
+
+                @include media-breakpoint-up(md) {
+                    margin-bottom: $spacing;
+                }
+
+                span {
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+            }
+
+            ul {
+                list-style-type: square;
+                padding-inline-start: 20px;
+            }
+        }
+    }
+}
+
+.buyingyourhome-bitsandbobs {
+    background-color: $color-primary-pudge;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+
+    .row {
+        align-items: center;
+    }
+
+    .image {
+        @include make-col-ready();
+        margin-bottom: $spacing * 0.5;
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+            @include order(1);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .inner {
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: $spacing;
+        }
+
+        .flowers {
+            position: absolute;
+            bottom:0;
+            left:-1rem;
+
+            @include media-breakpoint-up(sm) {
+                left:-1.875rem;
+            }
+
+            img {
+             width:10rem;
+            }
+        }
+    }
+
+    .text {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+            @include order(0);
+            padding-right:$spacing * 3;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-inline-start: 1.25rem;
+        }
+
+        a {
+            font-weight: bold;
+            color: inherit;
+        }
+    }
+
+    .text {
+        .icons {
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+    }
+
+    .image {
+        margin-bottom: $spacing;
+
+        .icons {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+    .icons {
+
+        img {
+            width:100%;
+            @include center;
+        }
+
+        .nhbc,.htb {
+            @include make-col-ready();
+            @include make-col(6);
+        }
+
+        .htb {
+            img {
+                @include media-breakpoint-up(xs) {
+                    width:50%;
+                }
+            }
+        }
+    }
+}

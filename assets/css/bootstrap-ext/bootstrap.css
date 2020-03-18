@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Mayeka";
+  src: url("/assets/fonts/Mayeka_Pro/Mayeka_Regular.otf") format("otf"), url("/assets/fonts/Mayeka_Pro/Mayeka_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("/assets/fonts/Montserrat/Montserrat-Regular.otf") format("otf"), url("/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("/assets/fonts/Montserrat/Montserrat-Medium.otf") format("otf"), url("/assets/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.clear-float {
+  clear: both;
+}
+/*# sourceMappingURL=bootstrap.css.map */

@@ -1,0 +1,338 @@
+.svg-overlay,
+.svg-image {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.svg-overlay {
+    position: absolute;
+    z-index: 1;
+    background: none;
+}
+
+.svg-image {
+    position: absolute;
+    background: none;
+    visibility: visible;
+}
+
+.rotate180 {
+
+    .svg-overlay,
+    .svg-image {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.flip180 {
+
+    .svg-overlay,
+    .svg-image {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}
+
+.neighbourlyLineHolder {
+    opacity: 0;
+
+    // @media screen and (-ms-high-contrast: active),
+    // (-ms-high-contrast: none) {
+    //     display:none;
+    // }
+
+    .stroke-color {
+        stroke: $color-primary-dimmity;
+    }
+}
+
+.bg-burra_pudge {
+    .stroke-color {
+        stroke: $color-primary-burra;
+    }
+
+    .fill-color {
+        fill: $color-primary-pudge;
+    }
+}
+
+.bg-silkash_silkash-shadow {
+    .stroke-color {
+        stroke: $color-silkash;
+    }
+
+    .fill-color {
+        fill: $color-silkash-shadow;
+    }
+}
+
+.bg-keld_keld-shadow {
+    .stroke-color {
+        stroke: $color-keld;
+    }
+
+    .fill-color {
+        fill: $color-keld-shadow;
+    }
+}
+
+.vase {
+    position: absolute;
+
+    .svg-overlay,
+    .svg-image {
+        width: 5rem;
+    }
+
+    &.top-left {
+        top: 1rem;
+        left: 0;
+    }
+
+    &.top-right {
+        top: -1rem;
+        right: 5rem;
+    }
+}
+
+.loveToLiveUnderline {
+    position: absolute;
+    // left: 10rem;
+    // top: 5rem;
+
+    // .svg-overlay,
+    // .svg-image {
+    //     width: 13rem;
+    // }
+
+    .svg-image {
+        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
+            height: 1rem;
+        }
+
+        .fill-color{
+            fill:$color-primary-dimmity !important;
+        }
+    }
+}
+
+.chair1 {
+    position: absolute;
+    right: 20rem;
+    top: 0;
+
+    .svg-overlay,
+    .svg-image {
+        width: 13rem;
+    }
+}
+
+.chair4 {
+    position: absolute;
+    left: -2rem;
+    top: -2rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 12rem;
+    }
+}
+
+.chair2 {
+    position: absolute;
+    left: 42%;
+    top: 3rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 15rem;
+    }
+
+    &.our-story {
+        left: auto;
+        top: auto;
+        right: 20%;
+        bottom: 38rem;
+    }
+}
+
+.stool {
+    position: absolute;
+    left: -2rem;
+    bottom: 15rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 10rem;
+    }
+
+    &.our-story {
+        left: 2rem;
+        bottom: 14rem;
+    }
+}
+
+.plant1 {
+    position: absolute;
+
+
+    &.bg-sub {
+        bottom: 42rem;
+        right: 30rem;
+
+        .svg-overlay,
+        .svg-image {
+            width: 18rem;
+        }
+    }
+
+    &.bg-discover {
+        bottom: 26rem;
+        right: 15rem;
+
+        .svg-overlay,
+        .svg-image {
+            width: 10rem;
+        }
+    }
+
+    &.our-story {
+        left: 2rem;
+        top: 2rem;
+
+        .svg-overlay,
+        .svg-image {
+            width: 13rem;
+        }
+    }
+}
+
+.plant2 {
+    position: absolute;
+    left: 7rem;
+    top: -0.5rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 14rem;
+    }
+}
+
+
+.lamp {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+
+
+    .svg-overlay,
+    .svg-image {
+        width: 10rem;
+    }
+}
+
+.bowl {
+    position: absolute;
+    right: 8rem;
+    top: 3rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 10rem;
+    }
+}
+
+.plant4 {
+    position: absolute;
+    right: 44rem;
+    bottom: 21rem;
+
+    .svg-overlay,
+    .svg-image {
+        width: 13rem;
+    }
+
+    &.our-story {
+        right: 13rem;
+        bottom: 18rem;
+    }
+}
+
+.plant3 {
+    position: absolute;
+    right: 9rem;
+    bottom: 75%;
+
+    .svg-overlay,
+    .svg-image {
+        width: 10rem;
+    }
+}
+
+.lampshade1 {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+
+    .svg-overlay,
+    .svg-image {
+        width: 10rem;
+    }
+
+    &.our-story {
+        right: 8rem;
+        top: 0;
+        left: auto;
+    }
+}
+
+.house {
+    position: absolute;
+
+    &.top-left {
+        left: -10rem;
+        top: 15%;
+    }
+
+    &.top-right {
+        top: 0;
+        right: 22rem;
+    }
+
+    .svg-overlay,
+    .svg-image {
+        width: 21rem;
+    }
+}
+
+.huddle {
+    position: absolute;
+
+    &.top-left {
+        left: -7rem;
+        top: 25%;
+
+        .svg-overlay,
+        .svg-image {
+            width: 30em;
+        }
+    }
+
+    &.top-right {
+        top: 5rem;
+        right: 10rem;
+
+        .svg-overlay,
+        .svg-image {
+            width: 25em;
+        }
+    }
+}
+
+.circle {
+    position: absolute;
+    height: auto;
+    border: 1px transparent solid;
+}

@@ -1,0 +1,48 @@
+@import "../../assets/vendors/bootstrap-4.0.0/scss/bootstrap.scss";
+@import "../css/bootstrap-ext/bootstrap.scss";
+
+/*MOBILE Navbar - START */
+//.navbar {
+//    background-color: $color-primary-black;
+//    padding: 0;
+
+//    .navbar-toggler-icon {
+//        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http:/ /www.w3.org/2000/svg'%3E%3Cpath stroke='RGBA(192,178,131,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+//    }
+
+//    .navbar-nav {
+//        a {
+//            color: $color-secondary-gold;
+//        }
+
+//        a:hover {
+//            color: $color-red;
+//        }
+//    }
+//}
+
+///*MOBILE Navbar - END */
+
+///*MOBILE Fixed Header - START */
+//header {
+//    position: fixed;
+//    height: $nav-height;
+//    display: block;
+//    width: 100%;
+//    top: 0;
+//    z-index: 1;
+//}
+@import "master-page";
+@import "carousel-fade";
+@import "home";
+@import "our-design";
+@import "buying-your-home";
+@import "news";
+@import "our-story";
+@import "plain-text";
+@import "contact-us";
+@import "search";
+@import "house-type";
+@import "scheme";
+@import "scheme-map";
+@import "background-images";

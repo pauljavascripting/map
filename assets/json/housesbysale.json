@@ -1,0 +1,32 @@
+[
+  {
+    "house_id": "_31",
+    "plot_name": "Silk Ash",
+    "house_name": "house1",
+    "num_of_bedrooms":1
+  },
+  {
+    "house_id": "_32",
+    "plot_name": "Silk Ash",
+    "house_name": "house2",
+    "num_of_bedrooms":2
+  },
+  {
+    "house_id": "_33",
+    "plot_name": "Silk Ash",
+    "house_name": "house3",
+    "num_of_bedrooms":2
+  },
+  {
+    "house_id": "_34",
+    "plot_name": "Silk Ash",
+    "house_name": "house4",
+    "num_of_bedrooms":2
+  },
+  {
+    "house_id": "_35",
+    "plot_name": "Silk Ash",
+    "house_name": "house5",
+    "num_of_bedrooms":3
+  }
+]

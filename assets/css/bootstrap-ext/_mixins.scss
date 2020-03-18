@@ -1,0 +1,107 @@
+@mixin create-container {
+    @include make-container();
+    @include make-container-max-widths();
+}
+
+@mixin create-container-fluid {
+    @include make-container();
+}
+
+@mixin create-container-custom($viewport: lg) {
+    @include create-container-fluid;
+
+    @include media-breakpoint-up($viewport) {
+        @include create-container
+    }
+}
+
+@mixin make-col-ready($gutters: true) {
+    position: relative;
+    // Prevent columns from becoming too narrow when at smaller grid tiers by
+    // always setting `width: 100%;`. This works because we use `flex` values
+    // later on to override this initial width.
+    width: 100%;
+    min-height: 1px; // Prevent collapsing
+
+    @if $gutters {
+        padding-right: ($grid-gutter-width / 2);
+        padding-left: ($grid-gutter-width / 2);
+    } @else {
+        padding-right:0;
+        padding-left:0;
+      }
+}
+
+@mixin nav-height {
+      margin-top: 0;//4rem;
+//     // @include media-breakpoint-up(lg) {
+//     //      margin-top: 3rem;//2rem;
+//     //  }
+}
+
+@mixin vertical-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin center-text {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin rotationFix {
+    //https://discussions.apple.com/thread/6640868
+    -webkit-perspective: 900000px;
+    perspective: 900000px;
+}
+
+@mixin hideElem ($elem) {
+    #{$elem} {
+        visibility: hidden;
+    }
+}
+
+@mixin overBgImage() {
+    position: relative;
+    z-index: 2;
+}
+
+.center {
+    @include center;
+}
+
+.center-text {
+    @include center-text;
+}
+
+.center-div {
+    //@include media-breakpoint-up(md) {
+    //    min-width: 75%;
+    @include vertical-align;
+    //}
+
+}
+
+.clear-float {
+    //@include clearfix; - couldnt get working
+    clear: both;
+}

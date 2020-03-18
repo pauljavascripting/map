@@ -1,0 +1,30 @@
+.contact-us {
+    @include nav-height();
+    padding-top: $spacing;
+    margin-bottom:$spacing * 2;
+
+    .header-info {
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            margin-bottom:$spacing;
+        }
+    }
+
+    .filler {
+        @include media-breakpoint-up(md) {
+            @include make-col-ready();
+            @include make-col(1);
+        }
+    }
+
+    .contact-details {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+            order: 2;
+        }
+    }
+
+}
+

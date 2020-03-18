@@ -1,0 +1,100 @@
+$color-white: #fff;
+$color-primary-mill-tail:#f3f1ed;
+$color-primary-burra:#b39053;
+$color-primary-pudge:#c6b78b;
+$color-primary-dimmity:#000;
+
+$color-silkash:#dcb18e;
+$color-keld:#b2d3e4;
+$color-popple: #aecfc7;
+$color-nuddle:#d3785d;
+$color-dumble:#014a53;
+$color-pingle:#4182a1;
+$color-dimpsey:#728393;
+
+$color-keld-shadow:#a1bfce;
+$color-silkash-shadow:#be8c6e;
+
+// $enable-grid-classes: false;
+
+$bs4-padding: 15px;// ($grid-gutter-width / 2);
+$spacing:1.5rem;
+
+@font-face {
+    font-family: "Mayeka";
+    src: url('/assets/fonts/Mayeka_Pro/Mayeka_Regular.otf') format('otf'),
+        url('/assets/fonts/Mayeka_Pro/Mayeka_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('/assets/fonts/Montserrat/Montserrat-Regular.otf') format('otf'),
+        url('/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url('/assets/fonts/Montserrat/Montserrat-Medium.otf') format('otf'),
+        url('/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@mixin Title {
+    font-family: Mayeka;
+    font-size: 2rem; //40px (2.5rem);
+
+    @include media-breakpoint-up(lg) {
+        font-size: 3.125rem; //50px;
+        line-height: 4.6875rem;
+    }
+}
+
+@mixin Header {
+    font-family: Mayeka;
+    font-size: 1.5rem; //24px
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.875rem; //30px;
+        line-height: 2.125rem; //34px 45px;
+    }
+}
+
+@mixin Bodycopy {
+    font-family: 'Montserrat Regular';
+    font-size: 1rem; //18px
+    line-height: 1.5;
+
+    @include media-breakpoint-up(lg) {
+        // font-size: 1.25rem; //20px 22px;
+        // line-height: 30px; //33px;
+    }
+}
+
+@mixin Buttons {
+    font-family: 'Montserrat Regular';
+    font-size: 0.75rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.125rem; //18px;
+        line-height: 27px;
+    }
+}
+
+@mixin Hyperlinks {
+    font-family: 'Montserrat Medium';
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        // font-size: 1.125rem; //18px;
+        // line-height: 27px;
+    }
+}
+
+@mixin Navigation {
+    font-family: 'Montserrat Medium';
+    font-size: 0.875rem; //14px;
+    line-height: 21px;
+}
