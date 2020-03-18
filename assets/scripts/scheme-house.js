@@ -900,20 +900,19 @@ if(svgElement){
 			roofColour = colourArray[1];
 		}
 
-		//console.log('wallColour'+wallColour)
-
-
 		for(let j=0;j<element.children.length;j++){
-			//console.log(element.children[j].id)
+		
 			// colour roof
-			let roof = _.includes(element.children[j].id,'_roof')
+			// let roof = _.includes(element.children[j].id,'_roof')
+			let roof = _.filter(element.children[j].id,'_roof')
 			if(roof){
 				//console.log('roofColour-----------------------------'+roofColour)
 				element.children[j].style.fill = roofColour;
 			}
 
 			// colour wall
-			let wall = _.includes(element.children[j].id,'_wall')
+			// let wall = _.includes(element.children[j].id,'_wall')
+			let wall = _.filter(element.children[j].id,'_wall')
 			if(wall){
 				// console.log(' wallColour--------------------'+ wallColour)
 				element.children[j].style.fill = wallColour;
