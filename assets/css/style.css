@@ -15432,6 +15432,7 @@ h5 {
 .houseInfo-section {
   z-index: 3;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .carHolder {
